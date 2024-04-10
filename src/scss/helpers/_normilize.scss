@@ -1,0 +1,146 @@
+*,
+::after,
+::before {
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    font-family: 'Montserrat';
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    background: $color-white;
+    color: $color-base;
+    @include font(18px, 30px, 400);
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+svg {
+    transform: translateZ(0);
+}
+
+button {
+    outline: none;
+    border: none;
+    font-family: 'Montserrat';
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    transition: opacity .2s;
+}
+
+img[data-src] {
+    opacity: 0;
+}
+
+.noscroll {
+    overflow: hidden !important;
+}
+
+.sprite-icons {
+    display: none !important;
+}
+html {
+    height: 100%;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 1680px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 7px;
+    }
+}
+@media only screen and (max-width: 1044px) {
+    html {
+        font-size: 6px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 5px;
+    }
+}
+@media only screen and (max-width: 666px) {
+    html {
+        font-size: 10px;
+    }
+}
+//
+//@media only screen and (min-width: 2049px) {
+//    html {
+//        font-size: 14px;
+//    }
+//}
